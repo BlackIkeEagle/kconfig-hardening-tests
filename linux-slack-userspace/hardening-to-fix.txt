@@ -1,0 +1,2 @@
+CONFIG_INTEGRITY                             |      y      |defconfig |userspace_hardening |   OK
+CONFIG_ARCH_MMAP_RND_BITS                    |     32      |  clipos  |userspace_hardening |   FAIL: "28"

@@ -1,0 +1,9 @@
+CONFIG_SECURITY                              |      y      |defconfig |  security_policy   |   OK
+CONFIG_SECURITY_YAMA                         |      y      |   kspp   |  security_policy   |   OK
+CONFIG_SECURITY_WRITABLE_HOOKS               | is not set  |    my    |  security_policy   |   OK: not found
+CONFIG_SECURITY_LOCKDOWN_LSM                 |      y      |  clipos  |  security_policy   |   OK
+CONFIG_SECURITY_LOCKDOWN_LSM_EARLY           |      y      |  clipos  |  security_policy   |   OK
+CONFIG_LOCK_DOWN_KERNEL_FORCE_CONFIDENTIALITY|      y      |  clipos  |  security_policy   |   FAIL: "is not set"
+CONFIG_SECURITY_LOADPIN                      |      y      |    my    |  security_policy   |   FAIL: "is not set"
+CONFIG_SECURITY_LOADPIN_ENFORCE              |      y      |    my    |  security_policy   |   FAIL: CONFIG_SECURITY_LOADPIN is needed
+CONFIG_SECURITY_SAFESETID                    |      y      |    my    |  security_policy   |   FAIL: "is not set"

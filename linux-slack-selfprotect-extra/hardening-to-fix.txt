@@ -1,0 +1,58 @@
+CONFIG_BUG                                   |      y      |defconfig |  self_protection   |   OK
+CONFIG_STRICT_KERNEL_RWX                     |      y      |defconfig |  self_protection   |   OK
+CONFIG_STACKPROTECTOR_STRONG                 |      y      |defconfig |  self_protection   |   OK
+CONFIG_SLUB_DEBUG                            |      y      |defconfig |  self_protection   |   OK
+CONFIG_STRICT_MODULE_RWX                     |      y      |defconfig |  self_protection   |   OK
+CONFIG_GCC_PLUGINS                           |      y      |defconfig |  self_protection   |   OK
+CONFIG_REFCOUNT_FULL                         |      y      |defconfig |  self_protection   |   OK
+CONFIG_IOMMU_SUPPORT                         |      y      |defconfig |  self_protection   |   OK
+CONFIG_MICROCODE                             |      y      |defconfig |  self_protection   |   OK
+CONFIG_RETPOLINE                             |      y      |defconfig |  self_protection   |   OK
+CONFIG_X86_SMAP                              |      y      |defconfig |  self_protection   |   OK
+CONFIG_X86_UMIP                              |      y      |defconfig |  self_protection   |   OK: CONFIG_X86_INTEL_UMIP "y"
+CONFIG_SYN_COOKIES                           |      y      |defconfig |  self_protection   |   OK
+CONFIG_PAGE_TABLE_ISOLATION                  |      y      |defconfig |  self_protection   |   OK
+CONFIG_RANDOMIZE_MEMORY                      |      y      |defconfig |  self_protection   |   OK
+CONFIG_INTEL_IOMMU                           |      y      |defconfig |  self_protection   |   OK
+CONFIG_AMD_IOMMU                             |      y      |defconfig |  self_protection   |   OK
+CONFIG_VMAP_STACK                            |      y      |defconfig |  self_protection   |   OK
+CONFIG_RANDOMIZE_BASE                        |      y      |defconfig |  self_protection   |   OK
+CONFIG_THREAD_INFO_IN_TASK                   |      y      |defconfig |  self_protection   |   OK
+CONFIG_BUG_ON_DATA_CORRUPTION                |      y      |   kspp   |  self_protection   |   OK
+CONFIG_DEBUG_WX                              |      y      |   kspp   |  self_protection   |   OK
+CONFIG_SCHED_STACK_END_CHECK                 |      y      |   kspp   |  self_protection   |   OK
+CONFIG_SLAB_FREELIST_HARDENED                |      y      |   kspp   |  self_protection   |   OK
+CONFIG_SLAB_FREELIST_RANDOM                  |      y      |   kspp   |  self_protection   |   OK
+CONFIG_SHUFFLE_PAGE_ALLOCATOR                |      y      |   kspp   |  self_protection   |   OK
+CONFIG_FORTIFY_SOURCE                        |      y      |   kspp   |  self_protection   |   OK
+CONFIG_GCC_PLUGIN_RANDSTRUCT                 |      y      |   kspp   |  self_protection   |   OK
+CONFIG_GCC_PLUGIN_LATENT_ENTROPY             |      y      |   kspp   |  self_protection   |   OK
+CONFIG_DEBUG_LIST                            |      y      |   kspp   |  self_protection   |   OK
+CONFIG_DEBUG_SG                              |      y      |   kspp   |  self_protection   |   OK
+CONFIG_DEBUG_CREDENTIALS                     |      y      |   kspp   |  self_protection   |   OK
+CONFIG_DEBUG_NOTIFIERS                       |      y      |   kspp   |  self_protection   |   OK
+CONFIG_HARDENED_USERCOPY                     |      y      |   kspp   |  self_protection   |   OK
+CONFIG_HARDENED_USERCOPY_FALLBACK            | is not set  |   kspp   |  self_protection   |   OK
+CONFIG_MODULE_SIG                            |      y      |   kspp   |  self_protection   |   OK
+CONFIG_MODULE_SIG_ALL                        |      y      |   kspp   |  self_protection   |   OK
+CONFIG_MODULE_SIG_SHA512                     |      y      |   kspp   |  self_protection   |   OK
+CONFIG_MODULE_SIG_FORCE                      |      y      |   kspp   |  self_protection   |   OK
+CONFIG_INIT_STACK_ALL                        |      y      |   kspp   |  self_protection   |   OK: CONFIG_GCC_PLUGIN_STRUCTLEAK_BYREF_ALL "y"
+CONFIG_INIT_ON_ALLOC_DEFAULT_ON              |      y      |   kspp   |  self_protection   |   OK
+CONFIG_INIT_ON_FREE_DEFAULT_ON               |      y      |   kspp   |  self_protection   |   OK
+CONFIG_GCC_PLUGIN_STACKLEAK                  |      y      |   kspp   |  self_protection   |   OK
+CONFIG_STACKLEAK_METRICS                     | is not set  |  clipos  |  self_protection   |   OK
+CONFIG_STACKLEAK_RUNTIME_DISABLE             | is not set  |  clipos  |  self_protection   |   OK
+CONFIG_DEFAULT_MMAP_MIN_ADDR                 |    65536    |   kspp   |  self_protection   |   OK
+CONFIG_SECURITY_DMESG_RESTRICT               |      y      |  clipos  |  self_protection   |   OK
+CONFIG_DEBUG_VIRTUAL                         |      y      |  clipos  |  self_protection   |   FAIL: "is not set"
+CONFIG_STATIC_USERMODEHELPER                 |      y      |  clipos  |  self_protection   |   FAIL: "is not set"
+CONFIG_SLAB_MERGE_DEFAULT                    | is not set  |  clipos  |  self_protection   |   FAIL: "y"
+CONFIG_GCC_PLUGIN_RANDSTRUCT_PERFORMANCE     | is not set  |  clipos  |  self_protection   |   OK
+CONFIG_RANDOM_TRUST_BOOTLOADER               | is not set  |  clipos  |  self_protection   |   OK
+CONFIG_RANDOM_TRUST_CPU                      | is not set  |  clipos  |  self_protection   |   FAIL: "y"
+CONFIG_INTEL_IOMMU_SVM                       |      y      |  clipos  |  self_protection   |   OK
+CONFIG_INTEL_IOMMU_DEFAULT_ON                |      y      |  clipos  |  self_protection   |   FAIL: "is not set"
+CONFIG_SLUB_DEBUG_ON                         |      y      |    my    |  self_protection   |   FAIL: "is not set"
+CONFIG_RESET_ATTACK_MITIGATION               |      y      |    my    |  self_protection   |   OK
+CONFIG_AMD_IOMMU_V2                          |      y      |    my    |  self_protection   |   FAIL: "m"

@@ -1,0 +1,18 @@
+CONFIG_MODULES                               | is not set  |   kspp   | cut_attack_surface |   FAIL: "y"
+CONFIG_DEVMEM                                | is not set  |   kspp   | cut_attack_surface |   FAIL: "y"
+CONFIG_IO_STRICT_DEVMEM                      |      y      |   kspp   | cut_attack_surface |   FAIL: "is not set"
+CONFIG_LEGACY_VSYSCALL_NONE                  |      y      |   kspp   | cut_attack_surface |   FAIL: "is not set"
+CONFIG_ACPI_CUSTOM_METHOD                    | is not set  |   kspp   | cut_attack_surface |   OK
+CONFIG_COMPAT_BRK                            | is not set  |   kspp   | cut_attack_surface |   OK
+CONFIG_DEVKMEM                               | is not set  |   kspp   | cut_attack_surface |   FAIL: "y"
+CONFIG_COMPAT_VDSO                           | is not set  |   kspp   | cut_attack_surface |   OK
+CONFIG_BINFMT_MISC                           | is not set  |   kspp   | cut_attack_surface |   FAIL: "m"
+CONFIG_INET_DIAG                             | is not set  |   kspp   | cut_attack_surface |   FAIL: "m"
+CONFIG_KEXEC                                 | is not set  |   kspp   | cut_attack_surface |   FAIL: "y"
+CONFIG_PROC_KCORE                            | is not set  |   kspp   | cut_attack_surface |   FAIL: "y"
+CONFIG_LEGACY_PTYS                           | is not set  |   kspp   | cut_attack_surface |   FAIL: "y"
+CONFIG_HIBERNATION                           | is not set  |   kspp   | cut_attack_surface |   FAIL: "y"
+CONFIG_IA32_EMULATION                        | is not set  |   kspp   | cut_attack_surface |   FAIL: "y"
+CONFIG_X86_X32                               | is not set  |   kspp   | cut_attack_surface |   FAIL: "y"
+CONFIG_MODIFY_LDT_SYSCALL                    | is not set  |   kspp   | cut_attack_surface |   FAIL: "y"
+CONFIG_OABI_COMPAT                           | is not set  |   kspp   | cut_attack_surface |   OK: not found
