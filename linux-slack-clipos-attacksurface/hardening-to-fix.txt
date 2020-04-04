@@ -1,0 +1,11 @@
+CONFIG_X86_INTEL_TSX_MODE_OFF                |      y      |  clipos  | cut_attack_surface |   OK
+CONFIG_STAGING                               | is not set  |  clipos  | cut_attack_surface |   FAIL: "y"
+CONFIG_KSM                                   | is not set  |  clipos  | cut_attack_surface |   FAIL: "y"
+CONFIG_KALLSYMS                              | is not set  |  clipos  | cut_attack_surface |   FAIL: "y"
+CONFIG_X86_VSYSCALL_EMULATION                | is not set  |  clipos  | cut_attack_surface |   FAIL: "y"
+CONFIG_MAGIC_SYSRQ                           | is not set  |  clipos  | cut_attack_surface |   FAIL: "y"
+CONFIG_KEXEC_FILE                            | is not set  |  clipos  | cut_attack_surface |   FAIL: "y"
+CONFIG_USER_NS                               | is not set  |  clipos  | cut_attack_surface |   FAIL: "y"
+CONFIG_X86_MSR                               | is not set  |  clipos  | cut_attack_surface |   FAIL: "y"
+CONFIG_X86_CPUID                             | is not set  |  clipos  | cut_attack_surface |   FAIL: "y"
+CONFIG_LDISC_AUTOLOAD                        | is not set  |  clipos  | cut_attack_surface |   FAIL: "y"
