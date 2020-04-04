@@ -55,7 +55,7 @@ CONFIG_STACKLEAK_RUNTIME_DISABLE             | is not set  |  clipos  |  self_pr
 CONFIG_DEFAULT_MMAP_MIN_ADDR                 |    65536    |   kspp   |  self_protection   |   OK
 CONFIG_SECURITY_DMESG_RESTRICT               |      y      |  clipos  |  self_protection   |   OK
 CONFIG_DEBUG_VIRTUAL                         |      y      |  clipos  |  self_protection   |   OK
-CONFIG_STATIC_USERMODEHELPER                 |      y      |  clipos  |  self_protection   |   OK
+CONFIG_STATIC_USERMODEHELPER                 |      y      |  clipos  |  self_protection   |   FAIL: "is not set"
 CONFIG_SLAB_MERGE_DEFAULT                    | is not set  |  clipos  |  self_protection   |   OK
 CONFIG_GCC_PLUGIN_RANDSTRUCT_PERFORMANCE     | is not set  |  clipos  |  self_protection   |   OK
 CONFIG_RANDOM_TRUST_BOOTLOADER               | is not set  |  clipos  |  self_protection   |   OK
@@ -143,4 +143,4 @@ CONFIG_VIDEO_VIVID                           | is not set  |    my    | cut_atta
 CONFIG_INTEGRITY                             |      y      |defconfig |userspace_hardening |   OK
 CONFIG_ARCH_MMAP_RND_BITS                    |     32      |  clipos  |userspace_hardening |   OK
 
-[+] config check is finished: 'OK' - 114 / 'FAIL' - 21
+[+] config check is finished: 'OK' - 113 / 'FAIL' - 22

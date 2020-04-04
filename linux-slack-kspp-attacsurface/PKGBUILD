@@ -44,7 +44,7 @@ if [[ ${#_extrapatches[@]} -ne 0 ]]; then
 fi
 
 sha512sums=('SKIP'
-            '292d6818279e5ec8dfdc6849702a4eaef5d029a83709dab58b80f4103b85cd0b7bad6d6f8ca7a474ca12b06c7c20c0b279cbcf8d163194afd037c6734cedafed')
+            'da9b14e1bd04b92a45ab2f5e465d600abf7c5d5fd5373ab8613d18aee825f3d779de8e8b0a1f96d884dd79f45118d84ede1b333ace60a73e6e5c23e570238753')
 
 export KBUILD_BUILD_HOST=blackeagle
 export KBUILD_BUILD_USER=$pkgbase
