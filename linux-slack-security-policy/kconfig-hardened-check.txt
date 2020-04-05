@@ -114,12 +114,12 @@ CONFIG_DEVPORT                               | is not set  |grsecurity| cut_atta
 CONFIG_DEBUG_FS                              | is not set  |grsecurity| cut_attack_surface |   OK
 CONFIG_NOTIFIER_ERROR_INJECTION              | is not set  |grsecurity| cut_attack_surface |   OK
 CONFIG_DRM_LEGACY                            | is not set  |maintainer| cut_attack_surface |   OK
-CONFIG_FB                                    | is not set  |maintainer| cut_attack_surface |   OK
-CONFIG_VT                                    | is not set  |maintainer| cut_attack_surface |   OK
-CONFIG_ACPI_TABLE_UPGRADE                    | is not set  | lockdown | cut_attack_surface |   OK
+CONFIG_FB                                    | is not set  |maintainer| cut_attack_surface |   FAIL: "y"
+CONFIG_VT                                    | is not set  |maintainer| cut_attack_surface |   FAIL: "y"
+CONFIG_ACPI_TABLE_UPGRADE                    | is not set  | lockdown | cut_attack_surface |   FAIL: "y"
 CONFIG_X86_IOPL_IOPERM                       | is not set  | lockdown | cut_attack_surface |   OK: not found
 CONFIG_EFI_TEST                              | is not set  | lockdown | cut_attack_surface |   OK
-CONFIG_BPF_SYSCALL                           | is not set  | lockdown | cut_attack_surface |   OK
+CONFIG_BPF_SYSCALL                           | is not set  | lockdown | cut_attack_surface |   FAIL: "y"
 CONFIG_MMIOTRACE_TEST                        | is not set  | lockdown | cut_attack_surface |   OK: not found
 CONFIG_X86_INTEL_TSX_MODE_OFF                |      y      |  clipos  | cut_attack_surface |   OK
 CONFIG_STAGING                               | is not set  |  clipos  | cut_attack_surface |   OK
@@ -132,15 +132,15 @@ CONFIG_USER_NS                               | is not set  |  clipos  | cut_atta
 CONFIG_X86_MSR                               | is not set  |  clipos  | cut_attack_surface |   OK
 CONFIG_X86_CPUID                             | is not set  |  clipos  | cut_attack_surface |   OK
 CONFIG_LDISC_AUTOLOAD                        | is not set  |  clipos  | cut_attack_surface |   OK
-CONFIG_AIO                                   | is not set  |grapheneos| cut_attack_surface |   OK
+CONFIG_AIO                                   | is not set  |grapheneos| cut_attack_surface |   FAIL: "y"
 CONFIG_MMIOTRACE                             | is not set  |    my    | cut_attack_surface |   OK: not found
 CONFIG_LIVEPATCH                             | is not set  |    my    | cut_attack_surface |   OK: not found
-CONFIG_IP_DCCP                               | is not set  |    my    | cut_attack_surface |   OK
-CONFIG_IP_SCTP                               | is not set  |    my    | cut_attack_surface |   OK
+CONFIG_IP_DCCP                               | is not set  |    my    | cut_attack_surface |   FAIL: "m"
+CONFIG_IP_SCTP                               | is not set  |    my    | cut_attack_surface |   FAIL: "m"
 CONFIG_FTRACE                                | is not set  |    my    | cut_attack_surface |   OK
-CONFIG_BPF_JIT                               | is not set  |    my    | cut_attack_surface |   OK
-CONFIG_VIDEO_VIVID                           | is not set  |    my    | cut_attack_surface |   OK: not found
+CONFIG_BPF_JIT                               | is not set  |    my    | cut_attack_surface |   FAIL: "y"
+CONFIG_VIDEO_VIVID                           | is not set  |    my    | cut_attack_surface |   FAIL: "m"
 CONFIG_INTEGRITY                             |      y      |defconfig |userspace_hardening |   OK
 CONFIG_ARCH_MMAP_RND_BITS                    |     32      |  clipos  |userspace_hardening |   OK
 
-[+] config check is finished: 'OK' - 133 / 'FAIL' - 2
+[+] config check is finished: 'OK' - 124 / 'FAIL' - 11
