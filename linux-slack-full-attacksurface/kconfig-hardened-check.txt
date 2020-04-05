@@ -70,10 +70,10 @@ CONFIG_SECURITY_YAMA                         |      y      |   kspp   |  securit
 CONFIG_SECURITY_WRITABLE_HOOKS               | is not set  |    my    |  security_policy   |   OK: not found
 CONFIG_SECURITY_LOCKDOWN_LSM                 |      y      |  clipos  |  security_policy   |   OK
 CONFIG_SECURITY_LOCKDOWN_LSM_EARLY           |      y      |  clipos  |  security_policy   |   OK
-CONFIG_LOCK_DOWN_KERNEL_FORCE_CONFIDENTIALITY|      y      |  clipos  |  security_policy   |   FAIL: "is not set"
+CONFIG_LOCK_DOWN_KERNEL_FORCE_CONFIDENTIALITY|      y      |  clipos  |  security_policy   |   OK
 CONFIG_SECURITY_LOADPIN                      |      y      |    my    |  security_policy   |   FAIL: "is not set"
 CONFIG_SECURITY_LOADPIN_ENFORCE              |      y      |    my    |  security_policy   |   FAIL: CONFIG_SECURITY_LOADPIN is needed
-CONFIG_SECURITY_SAFESETID                    |      y      |    my    |  security_policy   |   FAIL: "is not set"
+CONFIG_SECURITY_SAFESETID                    |      y      |    my    |  security_policy   |   OK
 CONFIG_SECCOMP                               |      y      |defconfig | cut_attack_surface |   OK
 CONFIG_SECCOMP_FILTER                        |      y      |defconfig | cut_attack_surface |   OK
 CONFIG_STRICT_DEVMEM                         |      y      |defconfig | cut_attack_surface |   OK: CONFIG_DEVMEM "is not set"
@@ -114,8 +114,8 @@ CONFIG_DEVPORT                               | is not set  |grsecurity| cut_atta
 CONFIG_DEBUG_FS                              | is not set  |grsecurity| cut_attack_surface |   OK
 CONFIG_NOTIFIER_ERROR_INJECTION              | is not set  |grsecurity| cut_attack_surface |   OK
 CONFIG_DRM_LEGACY                            | is not set  |maintainer| cut_attack_surface |   OK
-CONFIG_FB                                    | is not set  |maintainer| cut_attack_surface |   OK
-CONFIG_VT                                    | is not set  |maintainer| cut_attack_surface |   OK
+CONFIG_FB                                    | is not set  |maintainer| cut_attack_surface |   FAIL: "y"
+CONFIG_VT                                    | is not set  |maintainer| cut_attack_surface |   FAIL: "y"
 CONFIG_ACPI_TABLE_UPGRADE                    | is not set  | lockdown | cut_attack_surface |   OK
 CONFIG_X86_IOPL_IOPERM                       | is not set  | lockdown | cut_attack_surface |   OK: not found
 CONFIG_EFI_TEST                              | is not set  | lockdown | cut_attack_surface |   OK
@@ -139,7 +139,7 @@ CONFIG_IP_DCCP                               | is not set  |    my    | cut_atta
 CONFIG_IP_SCTP                               | is not set  |    my    | cut_attack_surface |   OK
 CONFIG_FTRACE                                | is not set  |    my    | cut_attack_surface |   OK
 CONFIG_BPF_JIT                               | is not set  |    my    | cut_attack_surface |   OK
-CONFIG_VIDEO_VIVID                           | is not set  |    my    | cut_attack_surface |   OK: not found
+CONFIG_VIDEO_VIVID                           | is not set  |    my    | cut_attack_surface |   OK
 CONFIG_INTEGRITY                             |      y      |defconfig |userspace_hardening |   OK
 CONFIG_ARCH_MMAP_RND_BITS                    |     32      |  clipos  |userspace_hardening |   OK
 
