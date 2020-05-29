@@ -7,7 +7,7 @@ _kernelname=-slack-full-attacksurface
 pkgbase="linux$_kernelname"
 pkgname=("linux$_kernelname" "linux$_kernelname-headers")
 _basekernel=5.4
-_patchver=30
+_patchver=43
 if [[ $_patchver -ne 0 ]]; then
     _tag=v${_basekernel}.${_patchver}
     pkgver=${_basekernel}.${_patchver}
@@ -44,7 +44,7 @@ if [[ ${#_extrapatches[@]} -ne 0 ]]; then
 fi
 
 sha512sums=('SKIP'
-            '108fa616462983d30cea162a637ea68b7b531f0b90769a7f0ad9811a4b3c330842f9890ce03fbd47a94823bf006b4cc4a48083b7188d3b9c2cf1264d96b44e19')
+            '77177bf7bdf129b19086137b9d6dc6dba0b68327e32e8833c10914f1a8f841c547605812644c8a65fb21ea4f91d3137dd7be12c829fff2bd5f6e7207d2915bb6')
 
 export KBUILD_BUILD_HOST=blackeagle
 export KBUILD_BUILD_USER=$pkgbase
