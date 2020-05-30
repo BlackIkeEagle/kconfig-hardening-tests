@@ -7,7 +7,7 @@ _kernelname=-slack-modern
 pkgbase="linux$_kernelname"
 pkgname=("linux$_kernelname" "linux$_kernelname-headers")
 _basekernel=5.4
-_patchver=30
+_patchver=43
 if [[ $_patchver -ne 0 ]]; then
     _tag=v${_basekernel}.${_patchver}
     pkgver=${_basekernel}.${_patchver}
@@ -44,7 +44,7 @@ if [[ ${#_extrapatches[@]} -ne 0 ]]; then
 fi
 
 sha512sums=('SKIP'
-            '1013d7f309b65a56088d4900c829475ab887901a299788b0cfdd874d5da3caeb537a378441e2835c9f1bac2bb4359254ae430a2b360e2bc6ae8cde25e1b5f825')
+            'f3e39f7d34a97f11679bd3465856ec3b7aa3eae9ed49d67ae0ad3f1b93b1e3932a4dce0ee0f3a68a099028b0137355f40b9cfe513fdc98b52e4b205fdcb0de2b')
 
 export KBUILD_BUILD_HOST=blackeagle
 export KBUILD_BUILD_USER=$pkgbase
